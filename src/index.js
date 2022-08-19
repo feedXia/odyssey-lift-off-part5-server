@@ -5,8 +5,6 @@ const typeDefs = require('./schema');
 const resolvers = require('./resolvers');
 const TrackAPI = require('./datasources/track-api');
 
-console.log(process.env);
-
 async function startApolloServer(typeDefs, resolvers) {
   const server = new ApolloServer({
     typeDefs,
