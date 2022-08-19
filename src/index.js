@@ -1,4 +1,4 @@
-const dotenv = require('dotenv')
+const dotenv = require('dot-env')
 dotenv.config()
 const { ApolloServer } = require('apollo-server');
 const typeDefs = require('./schema');
