@@ -16,6 +16,7 @@ async function startApolloServer(typeDefs, resolvers) {
       };
     },
     cors: {
+      origin: 'https://studio.apollographql.com/',
       credentials: true
     },
   });
