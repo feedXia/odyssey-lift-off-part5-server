@@ -4,6 +4,7 @@ const { ApolloServer } = require('apollo-server');
 const typeDefs = require('./schema');
 const resolvers = require('./resolvers');
 const TrackAPI = require('./datasources/track-api');
+const cors = require('cors')
 
 async function startApolloServer(typeDefs, resolvers) {
   const server = new ApolloServer({
@@ -15,7 +16,7 @@ async function startApolloServer(typeDefs, resolvers) {
       };
     },
     cors: {
-      origin: ["https://xia-server-catstronauts.herokuapp.com/", "https://studio.apollographql.com"],
+      origin: "https://studio.apollographql.com",
       allow_credentials: true,
     },
   });

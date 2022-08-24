@@ -10,6 +10,7 @@
   "dependencies": {
     "apollo-datasource-rest": "^0.11.0",
     "apollo-server": "^3.0.0",
+    "cors": "^2.8.5",
     "dot-env": "^0.0.1",
     "dotenv": "^16.0.1",
     "graphql": "^15.5.1"
