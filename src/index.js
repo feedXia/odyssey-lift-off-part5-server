@@ -17,7 +17,7 @@ async function startApolloServer(typeDefs, resolvers) {
     },
     cors: {
       origin: true,
-      allow_credentials: true,
+      // allow_credentials: true,
     },
   });
 
