@@ -16,7 +16,7 @@ async function startApolloServer(typeDefs, resolvers) {
       };
     },
     cors: {
-      origin: 'https://studio.apollographql.com/',
+      origin: ['https://studio.apollographql.com/', 'ttps://xia-server-catstronauts.herokuapp.com/'],
       credentials: true
     },
   });
