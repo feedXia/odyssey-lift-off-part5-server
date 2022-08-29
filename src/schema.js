@@ -73,5 +73,4 @@ const typeDefs = gql`
     videoUrl: String
   }
 `;
-
 module.exports = typeDefs;
