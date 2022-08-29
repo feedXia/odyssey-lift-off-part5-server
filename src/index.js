@@ -15,10 +15,10 @@ async function startApolloServer(typeDefs, resolvers) {
         trackAPI: new TrackAPI(),
       };
     },
-    cors: {
-      credentials: true,
-      origin: ["https://xia-client-catstronauts.herokuapp.com", "https://studio.apollographql.com"]
-    },
+    // cors: {
+    //   credentials: true,
+    //   origin: ["https://xia-client-catstronauts.herokuapp.com", "https://studio.apollographql.com"]
+    // },
   });
 
   const { url, port } = await server.listen({port: process.env.PORT || "4000"});
