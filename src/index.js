@@ -15,10 +15,10 @@ async function startApolloServer(typeDefs, resolvers) {
         trackAPI: new TrackAPI(),
       };
     },
-    introspection: true
+    introspection: true,
     cors: {
       credentials: true,
-      origin: ["https://xia-client-catstronauts.herokuapp.com", "https://studio.apollographql.com", "https://xia-server-catstronauts.herokuapp.com/"]
+      origin: ["https://xia-client-catstronauts.herokuapp.com", "https://studio.apollographql.com"]
     },
   });
 
